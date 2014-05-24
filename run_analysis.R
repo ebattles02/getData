@@ -1,7 +1,7 @@
 #Course Project for Coursera Getting and Cleaning Data Course
 #working directory
-dir <- 'D:/Documents/Coursera/Getting and Cleaning Data/CP'
-setwd(dir)
+# dir <- 'D:/Documents/Coursera/Getting and Cleaning Data/CP'
+# setwd(dir)
 
 #read activity labels and name columns
 activityLabels <- read.table('activity_labels.txt')
