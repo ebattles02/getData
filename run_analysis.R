@@ -78,5 +78,5 @@ for(i in 2:n){
 
 output <-rbind(activities.df, subjects.df)
 
-#createding output file
-write.csv(output, 'summary_data.csv', row.names=FALSE)
+#creating output file
+write.table(output, 'summary_data.txt', row.names=FALSE)
