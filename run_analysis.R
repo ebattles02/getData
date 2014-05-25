@@ -49,6 +49,9 @@ data2 <- data[,c(1,c,563)]
 #merge activity code with activity name and remove activity code
 tidyData <- merge(data2, activityLabels, by.x = 'activity', by.y = 'code')
 tidyData$activity<-NULL
+n <-names(tidyData)
+names(tidyData) <-gsub('-|\\(\\)',"", names(tidyData))
+
 
 #create summary table of averages of each variable for each subject
 subjects<- as.integer(names(table(tidyData$subject)))
